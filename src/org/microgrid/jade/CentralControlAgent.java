@@ -1212,6 +1212,7 @@ public class CentralControlAgent extends Agent {
                     sd.setType("LoadRequest");
                     template.addServices(sd);
 
+
                     try {
                         DFAgentDescription[] result = DFService.search(myAgent, template);
 
@@ -1280,7 +1281,7 @@ public class CentralControlAgent extends Agent {
                     System.out.println("*****************************************************************************\n");
                     System.out.println("************************COMPLETED ---> "+count+" ROUNDS *********************\n");
                     System.out.println("*****************************************************************************\n");
-
+                    count++;
                     try {
                         Thread.sleep(3000);
                         System.out.println("holding for 3 secs");
